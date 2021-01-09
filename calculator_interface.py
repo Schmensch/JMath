@@ -51,6 +51,26 @@ if saved_letter == "T":
             "Please enter the length of the upper line."),
             check_input.letter("Please enter the length of the lower line."))))
 
+
+elif saved_letter == "P":
+    saved_letter = check_input.letter(
+        "What do you want to calculate about the parallelogram?\nSurface area <S> | Height <H> | Base line <B>", "SHB",
+        True)
+
+    if saved_letter == "S":
+        print("The surface area is: " + str(
+            JMath.parallelogram.surface(check_input.number("Please enter the length of the base line."),
+                                        check_input.number("Please enter height."))))
+    if saved_letter == "H":
+        print("The height is: " + str(
+            JMath.parallelogram.height_or_base_line(check_input.number("Please enter the length of the base line."),
+                                                    check_input.number("Please enter the surface area."))))
+
+    if saved_letter == "B":
+        print("The length of the base line is: " + str(
+            JMath.parallelogram.height_or_base_line(check_input.number("Please enter the height"),
+                                                    check_input.number("Please enter the surface area."))))
+
 elif saved_letter == "I":
     saved_letter = check_input.letter(
         "What do you want to calculate about the triangle?\nSurface area <S> | Height <H> | Base line length <B>",
