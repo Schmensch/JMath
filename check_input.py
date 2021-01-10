@@ -6,10 +6,18 @@ class check_input:
         while True:
             try:
                 input_number = input()
+
+                if input_number.capitalize() == "Q":
+                    print("Programm beenden...")
+                    exit()
+
                 input_number = float(input_number)
+
                 if input_number <= 0:
                     raise FutureWarning
+
                 return input_number
+
             except FutureWarning:
                 print("The number has to be above zero.")
 
@@ -23,8 +31,13 @@ class check_input:
             valid = False
             try:
                 output_text = input()
+
+                if output_text.capitalize() == "Q":
+                    print("Programm beenden...")
+                    exit()
+
                 if capitalize:
-                    output_text = str.capitalize(output_text)
+                    output_text = output_text.capitalize()
 
                 for i in allowed_letters:
                     if i == output_text:
