@@ -17,7 +17,7 @@ print("\\\===//    ||      ||   //        \\\   ||       ||    ||")
 print("     -      S h a p e   C a l c u l a t o r      -\n\n")
 
 saved_letter = check_input.letter(
-    "What shape are you working with?\nTrapeze <T> | Parallelogram <P> | Triangle <I>", "TPI", True)
+    "What shape are you working with?\nTrapeze <T> | Parallelogram <P> | Triangle <I> | Rectangle <R>", "TPIR", True)
 
 if saved_letter == "T":
     saved_letter = check_input.letter(
@@ -47,9 +47,9 @@ if saved_letter == "T":
                 check_input.number("Please enter the length of the lower line."))))
 
     elif saved_letter == "H":
-        print("The height is: " + str(JMath.trapeze.height_or_middle_line(check_input.letter(
+        print("The height is: " + str(JMath.trapeze.height_or_middle_line(check_input.number(
             "Please enter the length of the upper line."),
-            check_input.letter("Please enter the length of the lower line."))))
+            check_input.number("Please enter the length of the lower line."))))
 
 
 elif saved_letter == "P":
@@ -87,5 +87,19 @@ elif saved_letter == "I":
     elif saved_letter == "B":
         print("The triangle has a base line length of: " + str(JMath.triangle.height_or_base_line(check_input.number(
             "Please enter the length of the height."), check_input.number("Please enter the surface area."))))
+
+elif saved_letter == "R":
+    saved_letter = check_input.letter(
+        "What do you want to calculate about the rectangle?\nSurface <S> | Side length <L>", "SL", True)
+
+    if saved_letter == "S":
+        print("The rectangle has a surface area of: " + str(
+            JMath.rectangle.surface(check_input.number("Please enter the length of the top or bottom lines."),
+                                    check_input.number("Please enter the length of the right or left lines."))))
+
+    elif saved_letter == "L":
+        print("The line has a length of: " + JMath.rectangle.side(
+            check_input.number("Please enter the surface area of the rectangle."),
+            check_input.number("Please enter the length of the side turned 90° to the current side.")))
 
 input()

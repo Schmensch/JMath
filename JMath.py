@@ -33,3 +33,13 @@ class JMath:
         @staticmethod
         def height_or_base_line(base_line_or_height: float, surface: float):
             return surface / base_line_or_height
+
+    class rectangle:
+
+        @staticmethod
+        def surface(top_or_bottom: float, right_or_left: float):
+            return top_or_bottom * right_or_left
+
+        @staticmethod
+        def side(surface: float, other_side: float):
+            return surface / other_side
