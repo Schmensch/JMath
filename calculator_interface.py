@@ -41,7 +41,7 @@ if saved_letter == "T":
                                           check_input.number("Bitte die Länge der unteren Linie eingeben."))))
 
         elif saved_letter == "O":
-            print("Die Länge der Mittelline ist: " + str(JMath.trapez.height_or_middle_line(check_input.number(
+            print("Die Länge der Mittelline ist: " + str(JMath.trapeze.height_or_middle_line(check_input.number(
                 "Bitte die Höhe eingeben."),
                 check_input.number("Bitte den Flächeninhalt eingeben."))))
 
@@ -70,7 +70,7 @@ elif saved_letter == "P":
             JMath.parallelogram.height_or_base_line(check_input.number("Bitte die Höhe eingeben."),
                                                     check_input.number("Bitte den Flächeninhalt eingeben."))))
 
-elif saved_letter == "I":
+elif saved_letter == "D":
     saved_letter = check_input.letter(
         "Was willst du vom Dreieck berechnen?\nOberfläche <O> | Höhe <H> | Länge der Grundlinie <G>",
         "OHG", True)
@@ -97,9 +97,9 @@ elif saved_letter == "R":
                                     check_input.number("Bitte die Länge der Seiten b oder d eingeben."))))
 
     elif saved_letter == "L":
-        print("Die Seitenlänge ist: " + JMath.rectangle.side(
+        print("Die Seitenlänge ist: " + str(JMath.rectangle.side(
             check_input.number("Bitte die Oberfläche eingeben."),
             check_input.number(
-                "Bitte die Längen der Seiten a oder c eingeben, wenn mit b oder d gerechnet wird, oder die Länge der Seiten b oder d, wenn mit a oder c gerechnet wird.")))
+                "Bitte die Längen der Seiten a oder c eingeben, wenn mit b oder d gerechnet wird, oder die Länge der Seiten b oder d, wenn mit a oder c gerechnet wird."))))
 
 input()
