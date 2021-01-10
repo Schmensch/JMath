@@ -12,15 +12,16 @@ from check_input import check_input
 
 
 class calculator_interface:
+    print("========   \\\      //       //\\\   ==========   ||    ||")
+    print("      ||   ||\\\  //||      //  \\\      ||       ||    ||")
+    print("      ||   || \\\// ||    =======\\\     ||       ======||")
+    print("      //   ||      ||    //      \\\    ||       ||    ||")
+    print("\\\===//    ||      ||   //        \\\   ||       ||    ||\n\n")
     while True:
-        print("========   \\\      //       //\\\   ==========   ||    ||")
-        print("      ||   ||\\\  //||      //  \\\      ||       ||    ||")
-        print("      ||   || \\\// ||    =======\\\     ||       ======||")
-        print("      //   ||      ||    //      \\\    ||       ||    ||")
-        print("\\\===//    ||      ||   //        \\\   ||       ||    ||\n\n")
 
         saved_letter = check_input.letter(
-            "Mit welcher Form arbeitest du?\nTrapez <T> | Parallelogramm <P> | Dreieck <D> | Rechteck <R>", "TPDR",
+            "Mit welcher Form arbeitest du?\nTrapez <T> | Parallelogramm <P> | Dreieck <D> | Rechteck <R>\nGroß- und Kleinschreibung ist erlaubt.\nDu kannst das Programm jederzeit mit Q beenden.",
+            "TPDR",
             True)
 
         if saved_letter == "T":
@@ -55,7 +56,6 @@ class calculator_interface:
                 print("Die Höhe ist:" + str(JMath.trapeze.height_or_middle_line(check_input.number(
                     "Bitte die Länge der Mittellinie eingeben."),
                     check_input.number("Bitte den Flächeninhalt eingeben."))))
-
 
         elif saved_letter == "P":
             saved_letter = check_input.letter(
@@ -109,3 +109,5 @@ class calculator_interface:
                     check_input.number("Bitte die Oberfläche eingeben."),
                     check_input.number(
                         "Bitte die Längen der Seiten a oder c eingeben, wenn mit b oder d gerechnet wird, oder die Länge der Seiten b oder d, wenn mit a oder c gerechnet wird."))))
+
+        print("\n\n")
