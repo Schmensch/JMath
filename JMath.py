@@ -1,5 +1,4 @@
 class JMath:
-
     class trapeze:
 
         @staticmethod

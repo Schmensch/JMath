@@ -1,7 +1,6 @@
 # ---------------
 # Imports
 # ---------------
-
 from JMath import JMath
 from check_input import check_input
 
@@ -9,8 +8,6 @@ from check_input import check_input
 # ----------------
 # Calculator interface
 # ----------------
-
-
 class calculator_interface:
     print("========   \\\      //       //\\\   ==========   ||    ||")
     print("      ||   ||\\\  //||      //  \\\      ||       ||    ||")

@@ -7,7 +7,6 @@ import sys
 # ---------------
 # Check input
 # ---------------
-
 class check_input:
 
     @staticmethod
