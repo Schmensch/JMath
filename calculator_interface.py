@@ -23,7 +23,7 @@ class calculator_interface:
 
         if saved_letter == "T":
             saved_letter = check_input.letter(
-                "Was willst du vom Trapez berechenen??\nFlächeninhalt <F> | Länge der Mittellinie <M> | Höhe <H>",
+                "Was willst du vom Trapez berechenen?\nFlächeninhalt <F> | Länge der Mittellinie <M> | Höhe <H>",
                 "FMH",
                 True)
 
