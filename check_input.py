@@ -28,10 +28,10 @@ class check_input:
                 return input_number
 
             except FutureWarning:
-                print("The number has to be above zero.")
+                print("Die Zahl muss über Null sein")
 
             except ValueError:
-                print("Please enter a number above zero.")
+                print("Bitte eine Zahl eingeben")
 
     @staticmethod
     def letter(text_to_user: str, allowed_letters: str, capitalize: bool):
@@ -57,4 +57,4 @@ class check_input:
                     raise FutureWarning
 
             except FutureWarning:
-                print("Please enter valid character.")
+                print("Bitte einen validen Buchstaben eingeben.")

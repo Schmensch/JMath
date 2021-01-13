@@ -23,7 +23,7 @@ class calculator_interface:
 
         if saved_letter == "T":
             saved_letter = check_input.letter(
-                "Was willst du vom Trapez berechenen?\nFlächeninhalt <F> | Länge der Mittellinie <M> | Höhe <H>",
+                "Was willst du vom Trapez berechnen?\nFlächeninhalt <F> | Länge der Mittellinie <M> | Höhe <H>",
                 "FMH",
                 True)
 
@@ -40,14 +40,15 @@ class calculator_interface:
                     "OL", True)
 
                 if saved_letter == "L":
-                    print("Die Länge der Mittelline ist: " + str(
+                    print("Die Länge der Mittellinie ist: " + str(
                         JMath.trapeze.middle_line(check_input.number("Bitte die Länge der oberen Linie eingeben."),
                                                   check_input.number("Bitte die Länge der unteren Linie eingeben."))))
 
                 elif saved_letter == "O":
-                    print("Die Länge der Mittelline ist: " + str(JMath.trapeze.height_or_middle_line(check_input.number(
-                        "Bitte die Höhe eingeben."),
-                        check_input.number("Bitte den Flächeninhalt eingeben."))))
+                    print(
+                        "Die Länge der Mittellinie ist: " + str(JMath.trapeze.height_or_middle_line(check_input.number(
+                            "Bitte die Höhe eingeben."),
+                            check_input.number("Bitte den Flächeninhalt eingeben."))))
 
             elif saved_letter == "H":
                 print("Die Höhe ist:" + str(JMath.trapeze.height_or_middle_line(check_input.number(
