@@ -15,5 +15,5 @@ try:
     else:
         print("Usage:\nStart without parameters: Start the program.\nStart with -h: Show help message")
 
-except range:
+except:
     calculator_interface
