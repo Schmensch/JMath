@@ -13,7 +13,7 @@ try:
         print("Um JMath zu starten, klicke doppelt auf die Datei.")
 
     else:
-        print("Usage:\nStart without parameters: Start the program.\nStart with -h: Show help message")
+        print("Benutzung:\nOhne Startparameter: Programm starten\nMit -h starten: Hilfe anzeigen.")
 
 except:
     calculator_interface
