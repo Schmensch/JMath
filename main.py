@@ -10,7 +10,7 @@ try:
         print("JMath hilfe:")
         print(
             "JMath ist eine Konsolenanwendung, die man benutzt um unterschiedliche Werte von Dreiecken, Rechtecken, Parallelogrammen oder Trapezen zu berechnen.")
-        print("Um JMath zu starten, klicke doppelt auf die Datei.")
+        print("Um JMath zu starten, starte die Datei ohne Startparameter")
 
     else:
         print("Benutzung:\nOhne Startparameter: Programm starten\nMit -h starten: Hilfe anzeigen.")
