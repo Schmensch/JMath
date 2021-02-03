@@ -1,10 +1,4 @@
 # ---------------
-# Imports
-# ---------------
-import sys
-
-
-# ---------------
 # Check input
 # ---------------
 class check_input:
@@ -18,7 +12,7 @@ class check_input:
 
                 if input_number.capitalize() == "Q":
                     print("Programm beenden...")
-                    sys.exit()
+                    exit()
 
                 input_number = float(input_number)
 
@@ -43,7 +37,7 @@ class check_input:
 
                 if output_text.capitalize() == "Q":
                     print("Programm beenden...")
-                    sys.exit()
+                    exit()
 
                 if capitalize:
                     output_text = output_text.capitalize()
