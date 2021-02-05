@@ -1,9 +1,8 @@
-import sys
-
+from sys import argv
 import calculator_interface
 
 try:
-    if sys.argv[1] == "-h" or "--hilfe" or "--help" or "/?" or "/h" or "/help" or "/hilfe":
+    if argv[1] == "-h" or "--hilfe" or "--help" or "/?" or "/h" or "/help" or "/hilfe":
         print("JMath hilfe:")
         print(
             "JMath ist eine Konsolenanwendung, die man benutzt um unterschiedliche Werte von Dreiecken, Rechtecken, Parallelogrammen oder Trapezen zu berechnen.")
