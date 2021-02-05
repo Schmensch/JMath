@@ -1,3 +1,6 @@
+from sys import exit
+
+
 def number(text_to_user: str):
     print(text_to_user)
     while True:
