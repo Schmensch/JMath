@@ -1,9 +1,6 @@
-# ---------------
-# Imports
-# ---------------
 import sys
 
-from calculator_interface import calculator_interface
+import calculator_interface
 
 try:
     if sys.argv[1] == "-h" or "--hilfe" or "--help" or "/?" or "/h" or "/help" or "/hilfe":
